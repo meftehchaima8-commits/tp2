@@ -26,7 +26,7 @@ for (let i = 1; i <= 5; i++) {
     ch = ch + "Log " + i + "<br>";
 }
 
-document.getElementById("resultat3").innerHTML = ch;
+document.getElementById("resultat").innerHTML = ch;
 
 
 // Exercice 4
