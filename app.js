@@ -69,11 +69,11 @@ let a = Number(prompt("Donner a"));
 let b = Number(prompt("Donner b"));
 
 if (Number.isFinite(a) && Number.isFinite(b)) {
-    document.getElementById("resultat4").innerHTML =
+    document.getElementById("resultat").innerHTML =
         "Somme = " + sommeEntre(a, b) +
         "<br>Somme des pairs = " + sommePairsEntre(a, b);
 } else {
-    document.getElementById("resultat4").innerHTML = "Valeurs invalides";
+    document.getElementById("resultat").innerHTML = "Valeurs invalides";
 }
 
 
@@ -94,15 +94,15 @@ if (dc1 >= 0 && dc1 <= 20 &&
     let m = moyenne(dc1, dc2, ds);
 
     if (m >= 10) {
-        document.getElementById("resultat5").innerHTML =
+        document.getElementById("resultat").innerHTML =
             "Moyenne = " + m.toFixed(2) + "<br>Admis";
     } else {
-        document.getElementById("resultat5").innerHTML =
+        document.getElementById("resultat").innerHTML =
             "Moyenne = " + m.toFixed(2) + "<br>Ajourné";
     }
 
 } else {
-    document.getElementById("resultat5").innerHTML = "Notes invalides";
+    document.getElementById("resultat").innerHTML = "Notes invalides";
 }
 
 
@@ -135,12 +135,12 @@ if (notes.length > 0) {
 
     let moy = somme / notes.length;
 
-    document.getElementById("resultat6").innerHTML =
+    document.getElementById("resultat").innerHTML =
         "Nombre de notes = " + notes.length +
         "<br>Moyenne = " + moy.toFixed(2) +
         "<br>Note minimale = " + min +
         "<br>Note maximale = " + max;
 
 } else {
-    document.getElementById("resultat6").innerHTML = "Aucune note saisie";
+    document.getElementById("resultat").innerHTML = "Aucune note saisie";
 }
